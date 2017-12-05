@@ -8,16 +8,5 @@ public class Monster extends Character{
 	}
 
 
-	public void lowerHP(int amount) {
-		health = health - amount;
-	}
 
-	public int attack(Protagonist protag) {
-    	int damage = 0;
-        if ( ((strength * attackRating) - protag.getDefense()) > 0) {
-        	damage = (int) ((strength * attackRating) - protag.getDefense());
-        }
-    	protag.lowerHP(damage); // damages the monster 
-      	return damage;
-	}
 }  

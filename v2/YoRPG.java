@@ -62,14 +62,14 @@ public class YoRPG
     System.out.print( s );
 
     try {
-	    difficulty = Integer.parseInt( in.readLine() );
+        difficulty = Integer.parseInt( in.readLine() );
     } catch ( IOException e ) { }
 
     s = "Intrepid protagonist, what doth thy call thyself? (State your name): ";
     System.out.print( s );
 
     try {
-	    name = in.readLine();
+        name = in.readLine();
     } catch ( IOException e ) { }
 
     //instantiate the player's character
@@ -90,13 +90,15 @@ public class YoRPG
     int d1, d2;
 
     if ( Math.random() >= ( difficulty / 3.0 ) )
-	    System.out.println( "\nNothing to see here. Move along!" );
+        System.out.println( "\nNothing to see here. Move along!" );
     else {
-	    System.out.println( "\nLo, yonder monster approacheth!" );
+        System.out.println( "\nLo, yonder monster approacheth!" );
 
-	    smaug = new Monster();
-
-	    while( smaug.isAlive() && pat.isAlive() ) {
+        smaug = new Monster();
+        
+        System.out.println(smaug.isAlive());
+        System.out.println(pat.isAlive());
+        while( smaug.isAlive() && pat.isAlive() ) {
 
         // Give user the option of using a special attack:
         // If you land a hit, you incur greater damage,
@@ -115,32 +117,33 @@ public class YoRPG
 
         d1 = pat.attack( smaug );
         d2 = smaug.attack( pat );
-
+        System.out.println (pat.getDefense());
+        System.out.println (smaug.getDefense());
         System.out.println( "\n" + pat.getName() + " dealt " + d1 +
                             " points of damage.");
 
         System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
                             " for " + d2 + " points of damage.");
-	    }//end while
+        }//end while
 
-	    //option 1: you & the monster perish
-	    if ( !smaug.isAlive() && !pat.isAlive() ) {
+        //option 1: you & the monster perish
+        if ( !smaug.isAlive() && !pat.isAlive() ) {
         System.out.println( "'Twas an epic battle, to be sure... " + 
                             "You cut ye olde monster down, but " +
                             "with its dying breath ye olde monster. " +
                             "laid a fatal blow upon thy skull." );
         return false;
-	    }
-	    //option 2: you slay the beast
-	    else if ( !smaug.isAlive() ) {
+        }
+        //option 2: you slay the beast
+        else if ( !smaug.isAlive() ) {
         System.out.println( "HuzzaaH! Ye olde monster hath been slain!" );
         return true;
-	    }
-	    //option 3: the beast slays you
-	    else if ( !pat.isAlive() ) {
+        }
+        //option 3: the beast slays you
+        else if ( !pat.isAlive() ) {
         System.out.println( "Ye olde self hath expired. You got dead." );
         return false;
-	    }
+        }
     }//end else
 
     return true;
@@ -152,7 +155,7 @@ public class YoRPG
   {
     // As usual, uncomment progressively in tiny steps
 
-    //loading...
+    // //loading...
     YoRPG game = new YoRPG();
 
     int encounters = 0;
