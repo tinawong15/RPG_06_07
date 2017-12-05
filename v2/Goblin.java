@@ -1,12 +1,12 @@
 public class Goblin extends Monster {
     
-    public Goblin {
+    public Goblin() {
         super();
         defense += 10;
     }
 
-    public String toString {
-        ans = super();
+    public String toString() {
+        String ans = super.toString();
         ans += "Type: Goblin" + "\n";
         return ans;
     }

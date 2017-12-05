@@ -73,7 +73,7 @@ public class YoRPG
     } catch ( IOException e ) { }
 
     //instantiate the player's character
-    
+    int i = 0; 
      try {
         System.out.println( "\nWhat type of Character do you want to be?" );
         System.out.println( "\t1: Mage\n\t2: Archer\n\t3: Warrior" );

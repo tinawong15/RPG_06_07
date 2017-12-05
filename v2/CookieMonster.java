@@ -1,12 +1,12 @@
 public class CookieMonster extends Monster {
     
-    public CookieMonster {
+    public CookieMonster() {
         super();
         health += 10;
     }
 
-    public String toString {
-        ans = super();
+    public String toString() {
+        String ans = super.toString();
         ans += "Type: Cookie Monster" + "\n";
         return ans;
     }
