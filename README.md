@@ -6,12 +6,14 @@ The character class contains the common fields for all characters in the rolepla
 ## Protagonist subclass
 The protagonist subclass contains the common fields of name, base defense, and base attack. The methods allow the protagonist to have special attacks as well as normalize.
 
-# Mage subclass
-# Archer subclass
-# Warrior subclass
+### Mage subclass
+### Archer subclass
+### Warrior subclass
 
 ## Monster subclass
-# Cookie Monster subclass
-# Goblin subclass
-# Slime subclass
+The monster subclass contains a constructor to initialize the fields to certain numbers.
+
+### Cookie Monster subclass
+### Goblin subclass
+### Slime subclass
 
