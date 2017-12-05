@@ -5,7 +5,7 @@ public class CookieMonster extends Monster {
         health += 10;
     }
 
-    public ToString {
+    public String toString {
         ans = super();
         ans += "Type: Cookie Monster" + "\n";
         return ans;
