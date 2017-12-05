@@ -117,8 +117,6 @@ public class YoRPG
 
         d1 = pat.attack( smaug );
         d2 = smaug.attack( pat );
-        System.out.println (pat.getDefense());
-        System.out.println (smaug.getDefense());
         System.out.println( "\n" + pat.getName() + " dealt " + d1 +
                             " points of damage.");
 
