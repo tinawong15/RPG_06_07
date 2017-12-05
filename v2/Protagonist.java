@@ -1,7 +1,7 @@
 public class Protagonist extends Character{
-    private String name;
-    private int baseDef; // for normalization
-    private double baseAtk;
+    protected String name;
+    protected int baseDef; // for normalization
+    protected double baseAtk;
     
     public Protagonist(String name){
         this.name = name;
