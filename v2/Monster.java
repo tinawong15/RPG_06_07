@@ -7,6 +7,21 @@ public class Monster extends Character{
 		attackRating = 1;
 	}
 
+        public String toString() {
+	String output = "";
+	output +=
+	    "Health: " + health + "\n"
+	    + "Strength:" + strength + "\n"
+	    + "Defense: " + defense + "\n"
+	    + "Attack Rating: " + attackRating + "\n";
+	return output;
+    }
+
+    public static void main(String[] args) {
+	Monster james = new Monster();
+	System.out.println(james);
+    }
+
 
 
 }  
