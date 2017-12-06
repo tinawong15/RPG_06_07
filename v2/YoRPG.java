@@ -111,8 +111,8 @@ public class YoRPG
 
         smaug = new Monster();
         
-        System.out.println(smaug.isAlive());
-        System.out.println(pat.isAlive());
+//        System.out.println(smaug.isAlive());
+//        System.out.println(pat.isAlive());
         while( smaug.isAlive() && pat.isAlive() ) {
 
         // Give user the option of using a special attack:
