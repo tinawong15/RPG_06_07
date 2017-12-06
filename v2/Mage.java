@@ -1,7 +1,7 @@
 public class Mage extends Protagonist {
 	public Mage(String name) {
 		super( name);
-		health += 25;
+		health += 20;
 	}
 
 	public String toString() {
