@@ -4,9 +4,10 @@ public class Archer extends Protagonist{
 		attackRating += .2;
 	}
 
-	public String toString() {
+/*	public String toString() {
 		String ans = super.toString();
 		ans += "Type: Archer" + "\n";
 		return ans;
 	}
+*/
 }
