@@ -6,8 +6,14 @@ public class Warrior extends Protagonist{
 	}
 
 	public String toString() {
-		String ans = super.toString();
-		ans += "Type: Warrior" + "\n";
-		return ans;
+	    String output = "";
+      output += "Protagonist " + name + "'s stats" + "\n"
+          + "Health: " + health + "\n"
+          + "Strength:" + strength + "\n"
+          + "Defense: " + defense + "\n"
+          + "Attack Rating: " + attackRating + "\n";
+      	
+		output += "Type: Warrior" + "\n";
+		return output;
 	}
 }

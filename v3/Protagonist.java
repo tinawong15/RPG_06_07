@@ -1,8 +1,8 @@
 public abstract class Protagonist extends Character{
-<<<<<<< HEAD
-=======
+// <<<<<<< HEAD
+//=======
     //without naming the class abstract: error: Protagonist is not abstract and does not override abstract method toString() in Protagonist
->>>>>>> 31a75bfb84d9cba08e7b21b664a34b171e47c12d
+//>>>>>>> 31a75bfb84d9cba08e7b21b664a34b171e47c12d
     protected String name;
     protected int baseDef; // for normalization
     protected double baseAtk;
@@ -31,7 +31,7 @@ public abstract class Protagonist extends Character{
         attackRating = baseAtk;
      }
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
     // Abstract methods cannot have a body
 
     public abstract String toString();
@@ -48,59 +48,7 @@ public abstract class Protagonist extends Character{
     }
     */
 
-    public static void main(String[] args) {
-
-	/*
-	  Error Message for making toString() abstract without changing header
-
-	  Protagonist.java:1: error: Protagonist is not abstract and does not override abstract method toString() in Protagonist
-	  public class Protagonist extends Character{
-	  ^
-       Protagonist.java:30: error: abstract methods cannot have a body
-       public abstract String toString() {
-                           ^
-			   2 errors
-	*/
-
-	/*
-	  Error Message for instantiating a Protagonist
-
-	  Protagonist.java:64: error: Protagonist is abstract; cannot be instantiated
-	  Protagonist james = new Protagonist();
-                            ^
-			    1 error
-
-	*/
-
-	//	Protagonist james = new Protagonist();
-
-	/*
-	  Error Message for not overriding toString() in a subclass
-
-	  Archer.java:1: error: Archer is not abstract and does not override abstract method toString() in Protagonist
-	  public class Archer extends Protagonist{
-	  ^
-	  1 error
-	*/
-
-=======
-    public abstract String toString(); 
- //    {
-	// String output = "";
-	// output += "Protagonist " + name + "'s stats" + "\n"
-	//     + "Health: " + health + "\n"
-	//     + "Strength:" + strength + "\n"
-	//     + "Defense: " + defense + "\n"
-	//     + "Attack Rating: " + attackRating + "\n";
-	// return output;
- //    }
-
-    public static void main(String[] args) {
-	//when instantiating a protagonist: error: Protagonist is abstract; cannot be instantiated
- //    Protagonist james = new Protagonist("Michael");
-	// System.out.println(james);
->>>>>>> 31a75bfb84d9cba08e7b21b664a34b171e47c12d
-    }
+    
 	
 	    
 }
